@@ -1,6 +1,6 @@
 package UDCode;
 
-$VERSION = "1.01";
+$VERSION = "1.02";
 
 use base 'Exporter';
 @EXPORT = qw(is_udcode ud_pair);
@@ -83,8 +83,8 @@ sub ud_pair {
     my $x = shift @q;
     return unless defined $x;
 
+    my ($a, $b) = @{$h{$x}};
     for my $c (@c) {
-      my ($a, $b) = @{$h{$x}};
       die unless defined $b;      # Can't happen
       # $a$x eq $b
 
