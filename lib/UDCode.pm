@@ -1,6 +1,6 @@
 package UDCode;
 
-$VERSION = "1.00";
+$VERSION = "1.01";
 
 use base 'Exporter';
 @EXPORT = qw(is_udcode ud_pair);
