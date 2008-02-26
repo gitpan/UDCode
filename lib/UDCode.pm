@@ -1,6 +1,6 @@
 package UDCode;
 
-$VERSION = "1.02";
+$VERSION = "1.03";
 
 use base 'Exporter';
 @EXPORT = qw(is_udcode ud_pair);
@@ -115,11 +115,11 @@ sub subtract {
   substr($_[1], length($_[0]));
 }
 
-=head2 AUTHOR
+=head1 AUTHOR
 
 Mark Jason Dominus (C<mjd@plover.com>)
 
-=head2 COPYRIGHT
+=head1 COPYRIGHT
 
 This software is hereby released into the public domain.  You may use,
 modify, or distribute it for any purpose whatsoever without restriction.
